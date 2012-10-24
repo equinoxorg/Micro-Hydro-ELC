@@ -1,0 +1,37 @@
+
+
+###############################################################################
+##	.	13/10/2012	.														 ##
+###############################################################################
+Re-organised the ADCs for new measurement system.
+
+ADCInit.c
+----------
+Current system:
+	Pin  1 (A6)	- AC_IN_V			SOC0			ADCINT4 (10.4)
+	Pin  2 (A2)	- AC_OUT_V	  		SOC1 			ADCINT9 ( 1.6)
+	Pin  3 (A0)	- SHAFT_VELOC 		SOC2	 		ADCINT2 ( 1.2)
+	Pin  5 (A4)	- AC_IN_I	  uses	SOC3  interrupt ADCINT5 (10.5)
+	Pin  6 (B1)	- AC_OUT_I	  		SOC4	 		ADCINT3 (10.3)
+	Pin 10 (B6)	- DC_HV_V	  		SOC5	 		ADCINT1 ( 1.1)
+	Pin 14 (B0)	- DC_HV_I	  		SOC6	 		ADCINT6 (10.6)
+
+ISR.c
+-----
+	INT1.1  - DC BRIDGE VOLTAGE MEASURE & FEEDBACK		(coded- unchecked)
+	INT1.2  - SHAFT VELOCITY MEASUREMENT				(coded- unchecked)
+	INT1.6  - AC OUTPUT VOLTAGE MEASURE AND FEEDBACK	(coded- unchecked)
+	INT10.3 - AC OUTPUT CURRENT MEASUREMENT				(coded- unchecked)
+	INT10.4 - AC INPUT VOLTAGE MEASUREMENT				(coded- unchecked)
+	INT10.5 - AC INPUT CURRENT MEASUREMENT				(NO CODE)
+	INT10.6 - DC BRIDGE CURRENT MEASUREMENT				(NO CODE)
+	
+Continuation:
+	- Check and write ISR code for the new ADC-ISRs.
+
+
+
+	
+###############################################################################
+
+	
