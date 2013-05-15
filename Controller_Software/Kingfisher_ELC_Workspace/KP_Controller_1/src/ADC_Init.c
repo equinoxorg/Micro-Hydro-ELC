@@ -103,12 +103,12 @@ void AdcInit(void)
 	//
 	// ----- SOC0 Configuration -----
 	AdcRegs.ADCSOC0CTL.bit.TRIGSEL		= 0x13	;	// SOC0 triggered by ePWM8-ADCSOCA
-	AdcRegs.ADCSOC0CTL.bit.CHSEL		= 0x6	;	// Channel ADC-B1 selected for conversion
+	AdcRegs.ADCSOC0CTL.bit.CHSEL		= 0x6	;	// Channel ADC-A6 selected for conversion
 	AdcRegs.ADCSOC0CTL.bit.ACQPS		= 0x6	;	// Sample acquisition window is (6+1)=7 cycles
 
 	// ----- Interrupt Configuration -----
 	AdcRegs.INTSEL3N4.bit.INT4CONT	= 0		;	// ADCINT4 pulses generated only when ADCINT4 flag is cleared
-	AdcRegs.INTSEL3N4.bit.INT4E		= 1		;	// ADCINT1 enabled
+	AdcRegs.INTSEL3N4.bit.INT4E		= 1		;	// ADCINT4 enabled
 	AdcRegs.INTSEL3N4.bit.INT4SEL	= 0x00	;	// EOC0 (End of Conversion) will trigger ADCINT4
 
 	// ----- Enable the ADCINT1 interrupt (10.4) -----
@@ -121,7 +121,7 @@ void AdcInit(void)
 	//
 	// ----- SOC1 Configuration -----
 	AdcRegs.ADCSOC1CTL.bit.TRIGSEL		= 0x13	;	// SOC1 triggered by ePWM8-ADCSOCA
-	AdcRegs.ADCSOC1CTL.bit.CHSEL		= 0x2	;	// Channel ADC-B1 selected for conversion
+	AdcRegs.ADCSOC1CTL.bit.CHSEL		= 0x2	;	// Channel ADC-A2 selected for conversion
 	AdcRegs.ADCSOC1CTL.bit.ACQPS		= 0x6	;	// Sample acquisition window is (6+1)=7 cycles
 
 	// ----- Interrupt Configuration -----
@@ -139,7 +139,7 @@ void AdcInit(void)
 	//
 	// ----- SOC2 Configuration -----
 	AdcRegs.ADCSOC2CTL.bit.TRIGSEL		= 0x13	;	// SOC2 triggered by ePWM8-ADCSOCA
-	AdcRegs.ADCSOC2CTL.bit.CHSEL		= 0x0	;	// Channel ADC-B1 selected for conversion
+	AdcRegs.ADCSOC2CTL.bit.CHSEL		= 0x0	;	// Channel ADC-A0 selected for conversion
 	AdcRegs.ADCSOC2CTL.bit.ACQPS		= 0x6	;	// Sample acquisition window is (6+1)=7 cycles
 
 	// ----- Interrupt Configuration -----
@@ -157,7 +157,7 @@ void AdcInit(void)
 	//
 	// ----- SOC3 Configuration -----
 	AdcRegs.ADCSOC3CTL.bit.TRIGSEL		= 0x13	;	// SOC3 triggered by ePWM8-ADCSOCA
-	AdcRegs.ADCSOC3CTL.bit.CHSEL		= 0x4	;	// Channel ADC-B1 selected for conversion
+	AdcRegs.ADCSOC3CTL.bit.CHSEL		= 0x4	;	// Channel ADC-A4 selected for conversion
 	AdcRegs.ADCSOC3CTL.bit.ACQPS		= 0x6	;	// Sample acquisition window is (6+1)=7 cycles
 
 	// ----- Interrupt Configuration -----
@@ -193,7 +193,7 @@ void AdcInit(void)
 	//
 	// ----- SOC5 Configuration -----
 	AdcRegs.ADCSOC5CTL.bit.TRIGSEL		= 0x13	;	// SOC5 triggered by ePWM8-ADCSOCA
-	AdcRegs.ADCSOC5CTL.bit.CHSEL		= 0xE	;	// Channel ADC-B1 selected for conversion
+	AdcRegs.ADCSOC5CTL.bit.CHSEL		= 0xE	;	// Channel ADC-B6 selected for conversion
 	AdcRegs.ADCSOC5CTL.bit.ACQPS		= 0x6	;	// Sample acquisition window is (6+1)=7 cycles
 
 	// ----- Interrupt Configuration -----
@@ -211,7 +211,7 @@ void AdcInit(void)
 	//
 	// ----- SOC6 Configuration -----
 	AdcRegs.ADCSOC6CTL.bit.TRIGSEL		= 0x13	;	// SOC6 triggered by ePWM8-ADCSOCA
-	AdcRegs.ADCSOC6CTL.bit.CHSEL		= 0x8	;	// Channel ADC-B1 selected for conversion
+	AdcRegs.ADCSOC6CTL.bit.CHSEL		= 0x8	;	// Channel ADC-B0 selected for conversion
 	AdcRegs.ADCSOC6CTL.bit.ACQPS		= 0x6	;	// Sample acquisition window is (6+1)=7 cycles
 
 	// ----- Interrupt Configuration -----
