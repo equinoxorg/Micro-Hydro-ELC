@@ -1,0 +1,115 @@
+
+-----------------------------------------------
+   CONTROL MODULE CHANGELOG 
+-----------------------------------------------
+
+-----------------------------------------------
+BREAKOUT
+v01
+ - Shape given to show orientation of controller
+ - Via-header-pad package used for headers
+ - 2x2 power columns
+ - Test pads provided for 12V0, 5V0, 3V3
+ - LED provided for GPIO34
+v02
+ - LED added for 3V3 power to show on-state
+ - Updated stack template used (includes PSU towers, changes to tstop & bstop)
+ - Corners changed to 3mm radius
+ - Breaks added in 3V3 and 5V0 development board outputs
+
+-----------------------------------------------
+MEASUREMENT
+v01
+ - Via-header-pad package used for headers
+ - 2x2 power columns
+ - Test pads provided for 12V0, 5V0, 3V3
+ - Available output/inputs include:
+     DL1, DL2, Shaft RPM, 12V rail,
+     AC input V & I, DC Bridge V & I
+ - Each output group provided with an individual GND rail
+v02a
+ - LEDs provided for DL1 and DL2 as activity indicators
+ - Board Names moved.
+ - Updated stack template used (includes PSU towers, changes to tstop & bstop)
+ - Corners changed to 3mm radius
+ - Mario added
+v02b
+ - Mario removed
+
+-----------------------------------------------
+POWER
+v01
+ - 1 x 12V0 input
+ - 1 x 12V0 output, 3 x 12V0 isolated outputs
+ - 3v3 and 5V0 regulators on-board
+ - Via-header-pad package used for headers
+ - 2x2 power columns
+ - Test pads provided for 5V0, 3V3
+ - LED indicators for 3V3, 5V0 and two sets of isolated 12V0
+ - Reverse mounted terminals to behave as feet
+v02
+ - 2 x 12V0 (non-isolated) outputs added
+ - Isolation-side notches improved
+ - Bottomside +/- symbols moved outwards
+ - Topside +/- symbols added to non-isolated
+ - +/- symbols made larger and clearer
+ - Power supply tracks slightly re-routed
+ - tstop and bstop added to 5V regulator heatsink pad
+ - Updated stack template used (includes PSU towers, changes to tstop & bstop)
+ - 5V test pad moved
+ - Corners changed to 3mm radius
+
+-----------------------------------------------
+DIGITAL OUT
+v01
+ - 1 x LCD Screen output using 2x8 latchedm shrouded header
+ - Signal LED outputs x 2 (casing and mini LED board)
+ - Other signal outputs (shutdown, start-up and p.trigger)
+ - Notch in left side of board for mini LED board
+ - 0.3mm signal tracks, 0.5mm power tracks used
+ - Via-header-pad package used for headers (no pads to mini LED board)
+ - 2x2 power columns
+ - Test pads provided for 5V0, 3V3, 12V0
+ - A single NC output available for future use
+ - Mini LED board has height of 19.95mm
+ - Mario included
+v01b
+ - Mario removed
+v02
+ - U2 -> U4 pins changed for correct LCD display functionality
+	Old		New
+     DB0 -> DB0	     DB0 -> DB4
+     DB1 -> DB1	     DB1 -> DB5
+     DB2 -> DB2	     DB2 -> DB6
+     DB3 -> DB3	     DB3 -> DB7
+ - Added a "1" next to shift register ICs to indicate first pins
+
+
+-----------------------------------------------
+DIGITAL OUT LED BOARD
+v01
+ - 7 x signal inputs to board
+	Control red & green LEDs, Dump Load 1 & 2 LEDs,
+	Inverter LED, Update LED, Ground
+ - Small board size: w x h = 21.59mm x 18.955mm
+v02
+ - Board shrunk by 2.54mm from bottom, 0.635mm from top
+ - New board size: w x h = 21.59mm x 15.78mm
+
+
+-----------------------------------------------
+DIGITAL IN
+v01
+ - Four button inputs included w. ground pin connector
+ - Protection PCB fault signal input included
+ - 3 x NC input pins included for potential future use.
+ - Via-header-pad package used for headers (no pads to mini LED board)
+ - 2x2 power columns
+ - Test pads provided for 5V0, 3V3, 12V0
+ - 0.3mm signal tracks, 0.5mm power tracks used
+ - Metroid insignia included
+v01b
+ - Metroid insignia removed
+
+
+-----------------------------------------------
